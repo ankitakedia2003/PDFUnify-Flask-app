@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #1a9bb5;*/
+    background-image:linear-gradient(to bottom right, rgb(249, 126, 147), pink, rgb(98, 202, 60), rgb(44, 218, 44));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(252, 29, 137);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(44, 218, 44);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="file"],
+input[type="password"] {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(44, 218, 44);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgb(29, 169, 29);
+}
+
+.drop-zone {
+    width: 90%;
+    padding: 25px;
+    border: 2px dashed #007BFF;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.drop-zone.dragover {
+    background-color: #e0e0e0;
+}

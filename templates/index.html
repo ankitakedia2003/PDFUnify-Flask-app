@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDFUnify</h1>
+        <form id="pdfForm">
+            <label for="pdf_files">Select PDF files to merge:</label>
+            <input type="file" name="pdf_files" id="pdf_files" multiple required>
+            <div id="drop_zone" class="drop-zone">
+                <p>Drag and drop files here</p>
+            </div>
+            <label for="password">Password (optional):</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Merge PDFs</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
