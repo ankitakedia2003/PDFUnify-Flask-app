@@ -59,5 +59,3 @@ def merge():
     
     return send_file(output_path, as_attachment=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
