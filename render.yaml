@@ -1,7 +1,0 @@
-services:
-  - name: PDFUnify Flask-app
-    type: web
-    env: python
-    plan: free
-    buildCommand: ""
-    startCommand: gunicorn app:app
